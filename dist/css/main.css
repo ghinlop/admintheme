@@ -137,6 +137,26 @@ img {
   -o-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%); }
 
+.uk-notification-message-bg-success {
+  background-color: var(--success) !important;
+  color: var(--light) !important; }
+
+.uk-notification-message-bg-danger {
+  background-color: var(--danger) !important;
+  color: var(--white) !important; }
+
+.uk-notification-message-bg-info {
+  background-color: var(--info) !important;
+  color: var(--white) !important; }
+
+.uk-notification-message-bg-warning {
+  background-color: var(--warning) !important;
+  color: var(--dark) !important; }
+
+.uk-notification-message-bg-primary {
+  background-color: var(--primary) !important;
+  color: var(--white) !important; }
+
 @media screen and (min-width: 769px) {
   .desk-md-full {
     min-height: 100vh; }

@@ -1,0 +1,53 @@
+<%- include('./layout/header') %>
+    <%- include('./components/navbar') %>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <%- include('./components/aside') %>
+                        <div class="col-md-10 bg-light py-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-white rounded shadow mb-3">
+                                        <div class="uk-h4 my-0 p-3 border-bottom border-muted point-control" uk-toggle="target: #uikit-label">
+                                            UIKit Labels
+                                            <span class="fa fa-angle-down float-right"></span>
+                                        </div>
+                                        <div id="uikit-label" class="d-block p-3">
+                                            <span class="uk-label">uk-label</span>
+
+                                            <span class="uk-label uk-label-success">uk-label.uk-label-success</span>
+
+                                            <span class="uk-label uk-label-warning">uk-label.uk-label-warning</span>
+
+                                            <span class="uk-label uk-label-danger">uk-label.uk-label-danger</span>
+                                            <hr>
+                                            <div class="uk-h4 border-bottom border-muted point-control">
+                                                UIKit Badges
+                                            </div>
+                                            <span class="uk-badge">uk-badge</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white rounded shadow mb-3">
+                                        <div class="uk-h4 my-0 p-3 border-bottom border-muted point-control" uk-toggle="target: #bootstrap-label">
+                                            Bootstrap Badge
+                                            <span class="fa fa-angle-down float-right"></span>
+                                        </div>
+                                        <div id="bootstrap-label" class="d-block p-3">
+                                            <span class="badge badge-dark">.badge.badge-dark</span>
+                                            <span class="badge badge-success">.badge.badge-success</span>
+                                            <span class="badge badge-info">.badge.badge-info</span>
+                                            <span class="badge badge-primary">.badge.badge-primary</span>
+                                            <span class="badge badge-danger">.badge.badge-danger</span>
+                                            <span class="badge badge-warning">.badge.badge-warning</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer') %>

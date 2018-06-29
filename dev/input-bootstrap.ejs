@@ -1,0 +1,122 @@
+<%- include('./layout/header') %>
+    <%- include('./components/navbar') %>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <%- include('./components/aside') %>
+                        <div class="col-md-10 bg-light py-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="bg-white rounded shadow mb-3">
+                                        <div class="uk-h4 my-0 p-3 border-bottom border-muted point-control" uk-toggle="target: #bootstrap-input">
+                                            Bootstrap Form Style
+                                            <span class="fa fa-angle-down float-right"></span>
+                                        </div>
+                                        <div id="bootstrap-input" class="p-3 uk-animation-fade">
+                                            <div class="form-group">
+                                                <label for="test-1">
+                                                    Default
+                                                </label>
+                                                <input type="text" id="test-1" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-2">
+                                                    Dont Border Radius
+                                                </label>
+                                                <input type="text" id="test-2" class="form-control rounded-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-2">
+                                                    Input Small
+                                                </label>
+                                                <input type="text" id="test-2" class="form-control form-control-sm rounded-0">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-2">
+                                                    Input Large
+                                                </label>
+                                                <input type="text" id="test-2" class="form-control form-control-lg rounded-0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white rounded shadow mb-3">
+                                        <div class="uk-h4 my-0 p-3 border-bottom border-muted point-control" uk-toggle="target: #input-ver">
+                                            Input Vertical
+                                            <span class="fa fa-angle-down float-right"></span>
+                                        </div>
+                                        <div id="input-ver" class="uk-animation-fade">
+                                            <div class="form-control">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-3">
+                                                        <label for="" class="mb-md-0">.col-md-3</label>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <input class="form-control" placeholder=".col-md-9"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-control">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-9">
+                                                        <input class="form-control" placeholder=".col-md-9"></input>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="" class="mb-md-0">.col-md-3</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white rounded shadow mb-3">
+                                        <div class="uk-h4 my-0 p-3 border-bottom border-muted point-control" uk-toggle="target: #bootstrap-color">
+                                            Bootstrap Input Color
+                                            <span class="fa fa-angle-down float-right"></span>
+                                        </div>
+                                        <div id="bootstrap-color" class="p-3 uk-animation-fade">
+                                            <div class="form-group">
+                                                <label for="test-3">
+                                                    Border Success
+                                                </label>
+                                                <input type="text" id="test-3" class="form-control border-success">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-3">
+                                                    Border Danger
+                                                </label>
+                                                <input type="text" id="test-3" class="form-control border-danger">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-3">
+                                                    Border Info
+                                                </label>
+                                                <input type="text" id="test-3" class="form-control border-info">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-3">
+                                                    Border Primary
+                                                </label>
+                                                <input type="text" id="test-3" class="form-control border-primary">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-3">
+                                                    Border Warning
+                                                </label>
+                                                <input type="text" id="test-3" class="form-control border-warning">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="test-3">
+                                                    Border Dark
+                                                </label>
+                                                <input type="text" id="test-3" class="form-control border-dark">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <%- include('./layout/footer') %>

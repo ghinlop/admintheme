@@ -1,0 +1,199 @@
+@import './_resource/inc/_mixin.scss';
+@import './_resource/inc/_var.scss';
+@import './_resource/inc/_global.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    background: var(--secondary);
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #25476a;
+    .logo{
+        img{
+            width: 100px;
+        }
+    }
+}
+nav{
+    ul{
+        >li{
+            >a{
+                display: block;
+                padding: 10px;
+                @include txt-color(#fff, #ddd);
+            }
+            &.hasnote > a > i{
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: yellow;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+.uk-breadcrumb > li{
+     > a, > span, &:last-child > *{
+        color: #fff;
+    }
+}
+.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before{
+    content: '\f0da';
+    font-family: $fa;
+}
+.point-control{
+    cursor: pointer;
+}
+#aside {
+    a[uk-toggle] + ul{
+        margin-top: 0;
+        position: static;
+        padding: 0;
+        background-color: #25476a;
+        a::before{
+            content: '\f0da';
+            font-family: $fa;
+            margin-right: 5px;
+        }
+        a:hover{
+            background-color: var(--info);
+        }
+    }
+    ul > li {
+        &:not(:last-child){
+            >a{
+                border-bottom: 1px dotted #455;
+            }
+        }
+        > a{
+            display: block;
+            padding: 5px 15px;
+            @include txt-color(#fff, #ddd);
+            font-size: 80%;
+        }
+    }
+    a[uk-toggle]{
+        position: relative;
+        &::before{
+            content: '\f107';
+            font-family: $fa;
+            top: 50%;
+            right: 5%;
+            position: absolute;
+            @include transform(translateY(-50%));
+        }
+    }
+}
+
+.tabs{
+    // border-bottom: 1px solid var(--dark);
+    .tabs-nav li{
+        a{
+            display: block;
+            padding: 10px 15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+    .tabs-body{
+        padding: 15px;
+    }
+    &.tabs-light{
+        .tabs-nav .uk-active{
+            a{
+                background-color: var(--light);
+                color: #333;
+            }
+        }
+        .tabs-body{
+            background-color: var(--light);
+        }
+    }
+    &.tabs-danger{
+        .tabs-nav .uk-active{
+            a{
+                background-color: var(--danger);
+                color: #fff;
+            }
+        }
+        .tabs-body{
+            color: #fff;
+            background-color: var(--danger);
+        }
+    }
+    &.tabs-info{
+        .tabs-nav .uk-active{
+            a{
+                background-color: var(--info);
+                color: #fff;
+            }
+        }
+        .tabs-body{
+            color: #fff;
+            background-color: var(--info);
+        }
+    }
+    &.tabs-success{
+        .tabs-nav .uk-active{
+            a{
+                background-color: var(--success);
+                color: #fff;
+            }
+        }
+        .tabs-body{
+            color: #fff;
+            background-color: var(--success);
+        }
+    }
+    &.tabs-dark{
+        .tabs-nav .uk-active{
+            a{
+                background-color: var(--dark);
+                color: #fff;
+            }
+        }
+        .tabs-body{
+            color: #fff;
+            background-color: var(--dark);
+        }
+    }
+}
+
+@include md{
+    .header-search{
+        .input-header{
+            background-color: $nocolor;
+            border-bottom: 1px solid #fff;
+        }
+        button[type='submit']{
+            color: #fff;
+        }
+    }
+    #aside{
+        min-height: 100vh;
+    }
+}
+
+@include sm{
+    .tabs{
+        .tabs-nav{
+            width: 100%;
+            li{
+                flex: 1;
+            }
+        }
+    }
+    nav ul li a{
+        text-align: center;
+    }
+    .dropdown-sm {
+        border-radius: 0!important;
+        width: 100%;
+    }
+}

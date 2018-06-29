@@ -1,0 +1,10 @@
+{
+  "name": "admintheme",
+  "version": "1.0.0",
+  "description": "Rebuild Admin Template",
+  "main": "index.js",
+  "repository": "https://github.com/ghinlop/admintheme.git",
+  "author": "Ghin Lop <ghinlop@gmail.com>",
+  "license": "MIT",
+  "eng": "ejs"
+}

@@ -1,0 +1,50 @@
+<header>
+    <div class="container-fluid pb-mb-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-md-left text-center logo py-2">
+                <img src="" alt="" data-src="./dist/images/logo.png" uk-img>
+            </div>
+            <div class="col-md-6 text-center header-search">
+                <form action="">
+                    <div class="uk-inline">
+                        <button type="submit" class="uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: search"></button>
+                        <input class="uk-input uk-form-width-large input-header" type="text" placeholder="Type for search">
+                    </div>
+                </form>
+            </div>
+            <nav class="nav-header col-md-3 text-md-right px-md-3 px-0">
+                <ul class="nolist d-md-inline-flex d-flex">
+                    <li class="flex-sm-1">
+                        <a href="#">
+                            <i uk-icon="icon: cog"></i>
+                        </a>
+                    </li>
+                    <li class="hasnote uk-animation-toggle flex-sm-1">
+                        <a href="#" uk-toggle="target: #bell-drop">
+                            <i class="uk-animation-shake" uk-icon="icon: bell"></i>
+                        </a>
+
+
+                        <div id="bell-drop" class="dropdown-sm bg-white shadow rounded p-3 text-left my-0" uk-drop="mode: click; boundary: .nav-header; boundary-align: true">
+                            <ul class="uk-list uk-list-divider">
+                                <li>List item 1</li>
+                                <li>List item 2</li>
+                                <li>List item 3</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="flex-sm-1">
+                        <a href="#">
+                            <i uk-icon="icon: sign-out"></i>
+                        </a>
+                    </li>
+                    <li class="d-md-none flex-sm-1">
+                        <a href="#" uk-toggle="target: #aside">
+                            <i uk-icon="icon: grid"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
